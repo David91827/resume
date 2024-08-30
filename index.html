@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport">
+    <title>個人履歷-陳信智</title>
+    <style> 
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color:black;
+            
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px 0;
+            background-color: #FCFCFC;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+          
+        }
+        .header
+        {
+            display:flex;
+           align-items:center;
+           justify-content:space-between;
+            margin-bottom:30px;
+            position:relative;
+        }
+        .header.rightside
+        {
+            position:absolute;
+            right:0;
+        }
+        .content
+        {
+            display:flex;
+            justify-content:space-between;
+            margin:30px;
+        }
+        .leftside,.rightside
+        {
+            width:500px;
+        }
+            .leftside h2, .rightside h2 {
+                font-size: 25px;
+                color: coral;
+                border-bottom: 3px solid ;
+                padding-bottom:5px;
+                margin-bottom:10px;
+                position:relative;
+            }
+        .leftside h2::after,.rightside h2::after
+        {
+            content:'';
+            position:absolute;
+            left:0;
+            bottom:-5px;
+            width:100px;
+            height:5px;
+            background:linear-gradient(90deg,#ff9a9e,#fad0c4);
+            border-radius:5px;
+        }
+        .leftside p,.rightside p
+        {
+            line-height:1.6;
+            margin-bottom:20px;
+        }
+        .leftside ul li, .rightside ul li {
+            margin-bottom: 10px;
+           
+        }
+        strong{
+            font-size:20px;
+        }
+        button {
+            margin: 15px;
+            color: whitesmoke;
+            background-color: #FF8040;
+            border: none;
+            border-radius: 7px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.5s, transform 0.3s;
+        }
+            button:hover {
+                background-color: #D94600;
+                transform:scale(1.2)
+            }
+        #message {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 92%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+            #message.left-align {
+                text-align: left;
+                margin-left: 0;
+                margin-right: auto;
+            }
+                #message .ResetMessage
+            {
+                text-align:center;
+                margin:0;    
+            }
+  
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+            .carousel img {
+                width: 100%;
+                display: block;
+            }
+
+            .carousel .controls {
+                position: absolute;
+                top: 50%;
+               
+                
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+
+                .carousel .controls button {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    border-radius: 50%;
+                    z-index: 1; /* Ensure buttons are on top of images */
+                }
+
+                    .carousel .controls button:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+        .footer {
+            background-color: #FCFCFC;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+        }
+
+            .footer p {
+                margin: 0;
+                font-size: 14px;
+                color: #666;
+            }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="background-color: #FF8F59; width: 500px; height: 170px;"><h1 style=" font-size: 3em; color:white;margin-left:50px ">        陳信智       <strong style="color:white;margin:20px">           的個人履歷</strong></h1></div>
+            <img src="S__48455696.jpg" alt="[你的名字]" width="250" height="250" style="border-radius: 50%; transform: none;margin-right:125px" />
+        </div>
+
+        <div class="content">
+
+            <div class="leftside">
+                <h2>個人簡介</h2>
+                <p>
+                    今年剛辭去飯店主管的職務，擁有較資深的服務業經驗，最近專注於前端開發技術的學習和實踐。在服務業中，我培養了和顧客及廠商的溝通和問題解決能力，這些技能在處理客戶需求和改進用戶體驗方面相對重要。<br />目前掌握HTML5、JavaScript、C#的技術，並在Vue框架方面也有學習經驗。希望轉職成為前端工程師，利用我在客戶服務中的洞察力和新學到的技術，創建優質的網頁和應用。
+                </p>
+                <h2>基本資料</h2>
+                <ul>
+                    <li><p><strong>電話:</strong>  0976789500</p></li>
+                    <li><p><strong>生日:</strong>  1998.01.30</p></li>
+                    <li><p><strong>最高學歷:</strong>  國立屏東大學-休閒系</p></li>
+                    <li><p><strong>地址:</strong>  高雄市鳳山區鳳東六街55巷22號</p></li>
+                    <li><p><strong>電子郵件:</strong>  wsxqaz963456@gmail.com</p></li>
+                    <li>
+                        <p>
+                            <strong>個人連結:</strong>
+                            <a href="https://line.me/ti/p/tDVNRJGOd2" target="_blank"> <img src="LINE_logo.jpg" style="width:40px;margin-left:15px" /></a>
+                            <a href="https://www.instagram.com/chc_1998?igsh=NzJ4dTJxYW42Nnlv&utm_source=qr" target="_blank"><img src="Instagram_logo_2016.jpg" style="width:40px;margin-left:15px" /></a>
+                            <a href="https://www.youtube.com/@user-sg7ld2nc7k" target="_blank"><img src="yt.jpg" style="width:40px;margin-left:15px;margin-bottom:6px" /></a>
+                        </p>
+                    </li>
+                </ul>
+                <h2>專業技能</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <strong>擅長工具：</strong>
+                            <ul>
+                                <li>C#</li>
+                                <li>ASP.NET</li>
+                                <li>HTML5</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript</li>
+                                <li>Vue.js</li>
+                                <li>SQL 資料庫</li>
+                            </ul>
+                        </td>
+                        <td style="padding-left:60px;vertical-align:top">
+                            <strong>其他工具：</strong>
+                            <ul>
+                                <li>CapCut 剪輯軟體</li>
+                                <li>Lightroom 修圖軟體</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rightside">
+                <h2>工作經歷</h2>
+                <p style="text-align:center"><strong>總年資3~4年</strong></p>
+                <div style="text-align:center;margin:20px">
+                    <button onclick="Show(`<div ><p><strong>工作地點:</strong>     麥當勞-屏東太平洋店</p>
+                    <p><strong>任職期間:</strong>     2018.07~2019.06</p><p><strong>職務名稱:</strong>    工讀生</p>
+                    <p><strong>職務內容:</strong>
+                    <ul>
+                    <li>麥當勞是非常團隊性質的工作，每個人都有各自的角色和工作站要負責，而我主要負責內場。要多與現場同仁相互配合，如半成品快沒了要提前請同仁炸製，如冷凍庫半成品要沒了也要立即像櫃檯反應。</li>
+                    <li>每個禮拜的其中一天，會需有盤點冷凍庫庫存量，因我上的是晚班，要交接給大夜班或早班的同事。</li>
+                    <li>除了把完整都產品包裝出去外，食品控管也非常重要。要定期輪替更換油槽內食用油的工作，調理完產品後隨手清潔檯面，也要定時清洗抹布。</li>
+                    </ul>
+                    </p></div>`)">和德昌股份<br />有限公司</button>
+
+                    <button onclick="Show(`<div ><p><strong>工作地點:</strong>    犇亞商務暨會議中心2F、6F、15F</p>
+                    <p><strong>任職期間:</strong>    2020.02~2020.07</p>
+                        <p><strong>職務名稱:</strong>    實習生</p>
+                        <p><strong>職務內容:</strong>
+                        <ul>
+                            <li>販賣茶飲、櫃檯收銀，還會學到沖泡咖啡及烹煮紅茶、綠茶桶的服務。</li>
+                            <li>我們與客戶接洽主要都是靠電話及郵件來往，和顧客預約場地時間等，以及確認顧客需求如代收包裹等等，在電話語氣上也必須客套有理給顧客留下好印象。</li>
+                            <li>顧客抵達現場要確認是否租借會議室，我們會擔任接待協助顧客場勘的角色，並現場教學設備如何使用。如顧客有意願接著會協助收取訂金下訂時間，以及確實交接顧客額外需求給當天值班同事。</li>
+                            <li>不論是顧客抵達前後，都須要檢查設備是否故障，確保設備品質達到一定水準，讓隔天或下一場要租借場地都顧客，能有良好的使用環境。</li>
+                            </ul>
+                            </p><a href=http://www.pcbc.tw/conferencecenter/conferencecenter.html target=_blank><strong>公司官網</strong></a>
+                         </div>`)">犇亞商務<br />股份有限公司</button>
+
+                    <button onclick="Show(`<div ><p><strong>工作地點:</strong>    鈞怡大飯店</p>
+                    <p><strong>任職期間:</strong>    2021.04~2024.01</p>
+                        <p><strong>職務名稱:</strong>
+                        <ul>
+                            <li>客務部-櫃台專員(2021.04~2023.03)</li>
+                            <li>管理部-副主任(2023.04~2024.01)</li>
+                            </ul>
+                        <strong>職務內容:</strong>
+                        <ul>
+                            <li>工作包括，辦理入住、指引停車、接聽電話，以及回答客人問題，算是我們最基本的工作。</li>
+                            <li>處理旅客各項客訴，是最需要經驗，和最能訓練溝通技巧的部分。要確實凝聽對方的抱怨給予最適合的回覆。若自身權限不足，或執意找主管，則要做好交接和安撫的角色。</li>
+                            <li>在晉升前經理有教導我一些修繕的技能，並帶著我操作過幾次。升主管後，要在客人退房和下一批客人入住前，利用時間完成這些修繕事項，如燈管燈泡不亮、排水孔阻塞、洗手台漏水等等。</li>
+                            <li>除了修繕之外，老闆也會向我提出關於客房維護的工作項目，如牆壁掉漆、壁紙缺角脫落、房間照明不足等問題。每個問題須親自想辦法嘗試是否能改善，若不行則向外聯絡廠商協助處理。</li>
+                            </ul>
+                            </p><a href=https://www.harbour10.com.tw/ target=_blank><strong>公司官網</strong></a>
+                         </div>`)">鈞晟股份<br />有限公司</button>
+                </div>
+                <div id="message" class="ResetMessage">
+                    請點擊上方按鈕來顯示工作內容
+                </div>
+                <h2>自傳</h2>
+                <div style="display:flex">
+                    <div style="align-content:center">
+                        <a href="#title1"><button style="font-size:12px">自我簡介</button></a>
+                        <a href="#title2"><button style="font-size:12px">工作經驗</button></a>
+                        <a href="#title3"><button style="font-size:12px">特殊經歷</button></a>
+                        <a href="#title4"><button style="font-size:12px">未來期許</button></a>
+                    </div>
+                    <div id="message" style="width:1500px;overflow-y:scroll;height:300px;text-align:left;margin-top:20px">
+                        <strong id="title1">自我簡介：</strong>
+                        <p>
+                            我是陳信智，來自高雄市。從小家人不定期會帶我們到處旅行，這也奠定了我熱愛冒險的熱忱。其中印象最深刻的在2023年獨自去日本3週，還有挑戰泳渡日月潭。靠自己的能力完成挑戰，讓自己從中獲得滿滿成就感，間接養成我不畏挑戰勇往直前的個性。
+                        </p>
+                        <strong id="title2">工作經驗：</strong>
+                        <p>
+                            畢業後的第一份正職工作選擇做飯店櫃檯，且飯店業剛好是本科系。會選做這職務考量到每天都會有形形色色的人來來去去，且要安頓好客人的入住品質及盡可能滿足客人需求，這對我的社會經驗有很大的提升。<br />
+                            做了2年的櫃檯基層，被主管拉拔及同事推薦，正式升格為管理部的副主任，工作內容有了很大的變化。除了要協助櫃檯之外，主要的工作為客房的修繕及維護保養，並每週繳交紀錄給老闆。從團隊合作轉變為獨自作業，還要代表公司和廠商接洽，又要顧及上司、下屬及顧客的需求，在軟實力方面得到非常大的提升。
+                        </p>
+                        <strong id="title3">特殊經歷：</strong>
+                        <ul>
+                            <li>
+                                <p>在我還是新人的時候，有個客人來詢問停車場位置，我請他往旁邊轉進後方車道稍後過去指引，她太太則留在大廳等先生。不過因現場人力不足，先生在入口等了一會兒，後來又因為他的車款不適合停飯店機械式停車場，只好無奈的自己去找車格，接著先生回來辦入住同仁給錯房卡。剛好遇到主管在巡樓層，和他告知給錯房卡的事情。主管致電下來我剛好接到電話要我想辦法處理，先生來到櫃檯向我抱怨種種遭遇，我則提供他免費升等房型的服務，先生和太太也就上樓了。沒多久先生下來取外送，我把外送遞給他的同時也和他說我是我們班導師的學生，我其實一直有認出他是趣淘漫旅的總經理，他曾經有來我們學校演講過。他也為前面抱怨的事情稍微道了歉，並傳簡訊邀請我可以去他們那邊工作，並給予我很大的都鼓勵。</p>
+                            </li>
+                            <li>
+                                <p>在晉升主管前有一天我和新人和另一位同事搭班，剛好不妙遇到地下3樓停車場淹水。我把櫃檯交給他們，我則電話像經理告知狀況並立刻到地下室查看狀況。經理請我先查看可能造成的原因，他則上車從住所趕往公司。我嘗試了一陣子後水漸漸消退了，不過我還是不確定問題出在哪。後來經理也剛好到現場，我和他交接了我剛的動作後，示意請我回櫃檯他則留下來研究看看。回到櫃檯新人和我報告說，他剛聯絡一組尚未入住的客人，今天會何時抵達時，順便提到目前館內車位停滿了。客人表示不開心，新人則答應刷退他的房費。不過我們有在網上明確註記車位有限的，且當天入住是不允許免費取消的。那筆房費10000多，我當下為新人的自作主張感到自責也不曉得如何是好，先把這情況告訴在地下室的經理。經理沒多久上來幫我叫到旁邊說，他對我的表現很是滿意。如果我沒有先去處理停車場的問題客人車子泡水，公司損失的不只是一筆房費。要我記住我們不可能同時做好每一件事，而是要視嚴重性來決定先後順序，同時也要分配工作給其他人去表現，他們表現的不如預期也不會完全是自己的問題。</p>
+                            </li>
+                            <li>
+                                <p>升主管後在同事面前變得更有影響力，包括原本比我還資深的同仁。那天我到公司早班同仁告訴我，有一位先生喝醉從房間下來，後來聯絡她太太請他離開。沒多久又下來了一次，我則在旁邊開錄音，同時再致電給太太一次。並示意和他們說如果他又有下來的話告知我一聲，我則要上樓做客房的修繕工作。過了一陣子櫃檯同仁打給我，告知我房務要打掃房間時，被眼前的一幕嚇到，她看到那個喝醉的先生在其他已退房的房間睡著了。我在電話上請櫃檯同仁立刻報警，我到櫃檯等待警方到場，則帶他們上樓協助將他驅趕回原本的房間，忙了一個上午才終於落幕。</p>
+                            </li>
+                        </ul>
+                        <strong id="title4">未來期許：</strong>
+                        <p>
+                            今年2024年初，我辭去飯店主管的職務。想要趁著還年輕的資本，學習其他專業能力。不過在思考接下來往哪條路的過程，會考慮到我的個性取向。
+                            我是有分享慾的人，從之前獨自旅遊的經驗讓我喜歡上攝影，拍美照和剪輯影片，把自己的作品分享出去讓大家看見，從這方面讓我對設計相關的工作產生興趣。<br />
+                            後來決定想從事前端工程師這行業，能夠讓大家看見我設計的作品，在學習上門檻相對高對沒經驗的我來說很有挑戰性和成就感。因此決定投入巨匠的產學計劃，跟著課程一步一腳印學習專業技能，提升硬實力再結合軟實力，期許自己未來在職場上勇於接受挑戰和替公司發揮最大效益。
+                        </p>
+                    </div>
+                </div>
+                <h2>作品預覽</h2>
+                <strong style="margin:160px;">點擊圖片 立即跳轉</strong>
+                <div class="carousel" style="width:400px;margin-top:15px">
+                    <a href="https://www.instagram.com/p/CNFZFeZjTbX/" target="_blank"><img src="S__48472079.jpg" alt="Image 1"></a>
+                    <a href="https://www.instagram.com/p/CL0dXWNDVCr/" target="_blank"><img src="S__48472073.jpg" alt="Image 2" style="display: none;"></a>
+                    <a href="https://www.instagram.com/p/CMs7epRD4hq/" target="_blank"><img src="S__48472074.jpg" alt="Image 3" style="display: none;"></a>
+                    <a href="https://www.youtube.com/watch?v=ThedKpszKkg" target="_blank"><img src="S__48472075.jpg" alt="Image 4" style="display: none;"></a>
+                    <a href="https://www.youtube.com/watch?v=YVZYctvj2Eo&t=1s" target="_blank"><img src="S__48472077.jpg" style="display: none;"></a>
+                    <div class="controls">
+                        <button class="prev">&lt;</button>
+                        <button class="next" style="position:absolute;left:340px">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 陳信智. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<script>
+    function Show(message)
+    {
+        const ShowMessage = document.getElementById('message');
+        ShowMessage.innerHTML = message;
+        ShowMessage.classList.add('left-align');
+    }
+    function Reset() {
+        const ResetMessage = `<div class = "ResetMessage" >請點擊上方按鈕來顯示工作內容</div>`;
+        const messageElement = document.getElementById('message');
+        messageElement.innerHTML = ResetMessage;
+        messageElement.classList.remove('left-align');
+    }
+    function ShowButton(element) {
+        return element && element.tagName === 'BUTTON' && element.hasAttribute('onclick')
+    }
+    
+    document.addEventListener('click', function (event) {
+        const messageElement = document.getElementById('message')
+        if (ShowButton(event.target)) {
+            return;
+        }
+       
+        if (messageElement && messageElement.contains(event.target)) {
+            return;
+        }
+            Reset();
+        
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+
+        const showImage = (index) => {
+            images.forEach((img, i) => {
+                img.style.display = i === index ? 'block' : 'none';
+            });
+        };
+
+        const nextImage = () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        };
+
+        const prevImage = () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        };
+
+        document.querySelector('.next').addEventListener('click', nextImage);
+        document.querySelector('.prev').addEventListener('click', prevImage);
+
+        // Show the first image
+        showImage(currentIndex);
+    });
+     
+    
+</script>
