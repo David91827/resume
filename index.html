@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" name="viewport">
@@ -13,8 +13,8 @@
             
         }
         .container {
-            width: 100%;
-            max-width: 90%;
+            width: 90%;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px 0;
             background-color: #FCFCFC;
@@ -43,7 +43,7 @@
         }
         .leftside,.rightside
         {
-            width:47%;
+            width:500px;
         }
             .leftside h2, .rightside h2 {
                 font-size: 25px;
@@ -77,14 +77,14 @@
             font-size:20px;
         }
         button {
-   margin: 1em;
-  color: whitesmoke;
-  background-color: #FF8040;
-  border: none;
-  border-radius: 7px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.5s, transform 0.3s;
+            margin: 15px;
+            color: whitesmoke;
+            background-color: #FF8040;
+            border: none;
+            border-radius: 7px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.5s, transform 0.3s;
         }
             button:hover {
                 background-color: #D94600;
@@ -115,7 +115,7 @@
         .carousel {
             position: relative;
             width: 100%;
-            max-width: 800px;
+            max-width: 800px; 
             margin: 0 auto;
             overflow: hidden;
         }
@@ -128,8 +128,6 @@
             .carousel .controls {
                 position: absolute;
                 top: 50%;
-               
-                
                 justify-content: space-between;
                 transform: translateY(-50%);
             }
@@ -142,7 +140,7 @@
                     cursor: pointer;
                     font-size: 18px;
                     border-radius: 50%;
-                    z-index: 1; /* Ensure buttons are on top of images */
+                    z-index: 1; 
                 }
 
                     .carousel .controls button:hover {
@@ -164,25 +162,13 @@
                 font-size: 14px;
                 color: #666;
             }
-            @media (max-width: 480px) {
-        .container {
-            
-            max-width: 95%;
-            padding: 10px;
-            font-size:10px
-        }
-                 .leftside,.rightside
-        {
-            width:400px;
-        }
-                button {
-  font-size: 6px;
-                    margin:0px
-    }
-.carousel {
-    max-width: 250px; 
-}
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+                font-size:12px
             }
+        }
     </style>
 </head>
 <body>
@@ -290,10 +276,10 @@
                 <h2>自傳</h2>
                 <div style="display:flex">
                     <div style="align-content:center">
-                        <a href="#title1"><button >自我簡介</button></a>
-                        <a href="#title2"><button >工作經驗</button></a>
-                        <a href="#title3"><button >特殊經歷</button></a>
-                        <a href="#title4"><button >未來期許</button></a>
+                        <a href="#title1"><button style="font-size:12px">自我簡介</button></a>
+                        <a href="#title2"><button style="font-size:12px">工作經驗</button></a>
+                        <a href="#title3"><button style="font-size:12px">特殊經歷</button></a>
+                        <a href="#title4"><button style="font-size:12px">未來期許</button></a>
                     </div>
                     <div id="message" style="width:1500px;overflow-y:scroll;height:300px;text-align:left;margin-top:20px">
                         <strong id="title1">自我簡介：</strong>
@@ -326,8 +312,8 @@
                     </div>
                 </div>
                 <h2>作品預覽</h2>
-                <strong style="margin:35%;">點擊圖片 立即跳轉</strong>
-                <div class="carousel" style="width:400px;margin-top:15px;">
+                <strong style="margin:160px;">點擊圖片 立即跳轉</strong>
+                <div class="carousel" style="width:400px;margin-top:15px">
                     <a href="https://www.instagram.com/p/CNFZFeZjTbX/" target="_blank"><img src="S__48472079.jpg" alt="Image 1"></a>
                     <a href="https://www.instagram.com/p/CL0dXWNDVCr/" target="_blank"><img src="S__48472073.jpg" alt="Image 2" style="display: none;"></a>
                     <a href="https://www.instagram.com/p/CMs7epRD4hq/" target="_blank"><img src="S__48472074.jpg" alt="Image 3" style="display: none;"></a>
