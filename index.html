@@ -43,7 +43,7 @@
         }
         .leftside,.rightside
         {
-            width:48%
+            width:500px;
         }
             .leftside h2, .rightside h2 {
                 font-size: 25px;
@@ -162,76 +162,13 @@
                 font-size: 14px;
                 color: #666;
             }
-        @media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header img {
-        margin: 20px 0;
-    }
-
-    .content {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .leftside, .rightside {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .leftside ul li, .rightside ul li {
-        margin-bottom: 5px;
-    }
-
-    .footer {
-        padding: 10px;
-    }
-
-    .carousel .controls button {
-        font-size: 16px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .leftside, .rightside {
-        width: 100%;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header img {
-        width: 150px;
-        height: 150px;
-        margin: 10px 0;
-    }
-
-    .carousel .controls button {
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    .footer {
-        padding: 8px;
-    }
-}
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+                font-size:12px
+            }
+        }
     </style>
 </head>
 <body>
@@ -375,7 +312,7 @@
                     </div>
                 </div>
                 <h2>作品預覽</h2>
-                <strong style="margin-left:32%;">點擊圖片 立即跳轉</strong>
+                <strong style="margin:160px;">點擊圖片 立即跳轉</strong>
                 <div class="carousel" style="width:400px;margin-top:15px">
                     <a href="https://www.instagram.com/p/CNFZFeZjTbX/" target="_blank"><img src="S__48472079.jpg" alt="Image 1"></a>
                     <a href="https://www.instagram.com/p/CL0dXWNDVCr/" target="_blank"><img src="S__48472073.jpg" alt="Image 2" style="display: none;"></a>
